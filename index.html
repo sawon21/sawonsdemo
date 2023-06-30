@@ -15,9 +15,13 @@
 
 </head>
 <body onload="preload()">
+    
+     <div id="preloader">
+        <div id="loader"></div>
+      </div>
 
-    <div  id="loading" class="lll">
-        <div class="loader"></div>
+
+        
     </div>
    
 
@@ -274,7 +278,7 @@
 
     <script src="script.js"></script>
     <script>
-        var preloader= document.getElementById('loading');
+        var preloader= document.getElementById('preloader');
         function preload(){
             preloader.style.display='none'
         }
