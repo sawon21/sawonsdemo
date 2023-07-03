@@ -9,35 +9,82 @@
 }
 
  
-svg {
-   
-    display:block;
-    width:258px;
-    height:258px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
+
+.lll{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .tree {
-    fill: #E73E0D;
+  .loaderx{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    animation: rotate 5s  infinite;
   }
-  
-  .circle-mask {
-    transform-origin: 50% 90%;
-    animation: scale 5s infinite ease-out;
+  .bollx{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  @keyframes scale {
-    0%, 100% {
-      transform: scale(0.0);
+  .upperx{
+    left: 0;
+    top: -22px;
+    background: #2da2ff;
+    animation: upperx 1s linear infinite;
+  }
+  @keyframes upperx {
+    50%{
+      top: 22px;
     }
-    7%, 90% {
-      transform: scale(0.4);
+    100%{
+      top: 22px;
     }
-    50% {
-      transform: scale(1);
+  }
+  .rightx{
+    right: -22px;
+    top: 0;
+    background: #ff337a;
+    animation: rightx 1s linear infinite;
+  }
+  @keyframes rightx {
+    50%{
+      right: 22px;
+    }
+    100%{
+      right: 22px;
+    }
+  }
+  .lowerx{
+    bottom: -22px;
+    left: 0;
+    background: #ffff00;
+    animation: lowerx 1s linear infinite;
+  }
+  @keyframes lowerx {
+    50%{
+      bottom: 22px;
+    }
+    100%{
+      bottom: 22px;
+    }
+  }
+  .leftx{
+    left: -22px;
+    top: 0;
+    background: #00ff00;
+    animation: leftx 1s linear infinite;
+  }
+  @keyframes leftx {
+    50%{
+      left: 22px;
+    }
+    100%{
+      left: 22px;
     }
   }
 
