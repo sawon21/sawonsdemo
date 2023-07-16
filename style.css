@@ -18,12 +18,7 @@
     align-items: center;
     justify-content: center;
   }
-  .loaderx{
-    height: 25px;
-    width: 25px;
-    position: relative;
-    animation: rotate 5s  infinite;
-  }
+  
   .loader {
     --background: linear-gradient(135deg, #23C4F8, #275EFE);
     --shadow: #{rgba(#275EFE, .28)};
