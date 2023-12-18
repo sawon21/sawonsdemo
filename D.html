@@ -1,17 +1,133 @@
 <!DOCTYPE html>
 <html>
+  
+  
+  <head>
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');   
+      body {
+    margin: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    background: #e9f0f4;
+}
+
+#wrap {
+    margin: 20px auto;
+    text-align: left;
+}
+.circle{
+  text-align: center;
+}
+.btn-slide {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 130px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin: 5px;
+    transition: .6s;
+}
+
+
+.btn-slide:hover {
+    background-color: green;
+        border: 2px green;
+}
+
+
+.btn-slide:hover span.circle {
+    left: 100%;
+    margin-left: -35px;
+    background-color: #fdfdfd;
+    color: green;
+}
+
+
+.btn-slide:hover span.title {
+    left: 30px;
+    opacity: 0;
+}
+
+.btn-slide:hover span.title-hover {
+    opacity: 1;
+    left: 30px;
+}
+
+.btn-slide span.circle {
+    display: block;
+    background-color: #0099cc;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 3px;
+    line-height: 28px;
+    height: 28px;
+    width: 28px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slide span.title,
+  .btn-slide span.title-hover
+   {
+    position: absolute;
+    left: 38px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+}
+
+
+.btn-slide span.title-hover {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slide span.title-hover{
+    color: #fff;
+}
+      
+    </style>
+  </head>
+  
+  
+  
+  
+  
 <body>
 
 <p>Click on the image to download the image:<p>
 
-<a href="Flower.jpg" download="flower_sawon">
- Download Now 
+<img src="Flower.jpg" alt="Flower" width="90" height="90">
+
+<div id="wrap">
+
+<a href="Flower.jpg" class="btn-slide">
+  <span class="circle"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+  <span class="title">Download</span>
+  <span class="title-hover">Done</span>
 </a>
-<img src="Flower.jpg" alt="Flower" width="104" height="142">
+</div>
 
 <p>Notice that the filename of the downloaded file will be saved as "flower_sawon.jpg" instead of "Flower.jpg".</p>
 
 <p><b>Note:</b> The download attribute is not supported in Edge version 12, IE, Safari 10 (and earlier), or Opera version 12 (and earlier).</p>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/ebd0800a84.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
